@@ -1,0 +1,16 @@
+{
+    "name": "Lucy's Valentine",
+    "short_name": "Valentine",
+    "description": "A special Valentine's message for Lucy",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ff6b6b",
+    "theme_color": "#ff6b6b",
+    "icons": [
+        {
+            "src": "images/heart.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

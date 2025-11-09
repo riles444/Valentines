@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#ff6b6b">
+    <meta name="description" content="A special Valentine's message for Lucy">
+    <title>For Lucy ❤️ Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="valentines.css">
+    <link rel="preconnect" href="https://open.spotify.com">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-title" content="Lucy's Valentine">
+    <link rel="apple-touch-icon" href="images/heart.png">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(() => console.log('Service Worker registered'))
+                .catch(err => console.log('Service Worker registration failed:', err));
+        }
+    </script>
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    <div class="container">
+        <div class="card">
+            <div class="heart-container">
+                <div class="heart-front"></div>
+                <div class="heart-back"></div>
+            </div>
+            <div class="music-player">
+                <h3>🎵</h3>
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/6sGIMrtIzQjdzNndVxe397?utm_source=generator" 
+                    width="100%" 
+                    height="80" 
+                    frameBorder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <h1>Lucy, Will You Be My Valentine?</h1>
+            <div class="love-letter">
+                <h2>Dear Lucy,</h2>
+                <p class="letter-text">
+                    Falling in love with you has been so easy, just like Olivia Dean sings. Your stunning beauty takes my 
+                    breath away every time I see you - those big brown eyes, that amazing smile. But it's not just your outer 
+                    beauty that draws me in, it's your inner light, your strength, and your heart.
+                </p>
+                <p class="letter-text">
+                    I love how you try to hide your soft side, but I see it, and it makes me fall more in love with you every 
+                    day. Your stubbornness is cute, and I adore how you won't admit it 😉. And, okay, I'll admit it, your snores 
+                    are adorable too 😂
+                </p>
+                 <p class="letter-text">
+                  Munching together is one of my favorite things, and I love how you enjoy food (who doesn't love food, right? 
+                  🤪). But more than that, I love how you savor every moment, how you take notes, and how you tackle life with 
+                  determination and grace.
+                </p> <p class="letter-text">
+                   I know you're going through a lot, baby, but I want you to know that I'm here for you, always. I'll hold your 
+                   hand, listen to you, and support you in every way I can. You deserve all the love and happiness in the world, 
+                   and I'll do my best to give it to you.
+                </p>
+                <p class="letter-text">
+                    "So Easy(To Fall In Love)" is a beautiful song and every time I hear it, I think of you. You're the one I want to spend 
+                    holidays with, special days, and every ordinary day in between.
+                </p>
+                <p class="letter-text">
+                    I Love You More Than Words Can Say, My Love. Will You Be My Valentine?
+                </p>
+                <p class="letter-text signature">
+                    With all my love,<br>
+                    Riley
+                </p>
+            </div>
+            <div class="photos">
+                <img src="US/IMG-20250607-WA0019.jpg" class="photo" style="--photo-index: 0" alt="be">
+                <img src="US/IMG-20250606-WA0068 (1).jpg" class="photo" style="--photo-index: 1" alt="my">
+                <img src="US/WhatsApp Image 2025-11-09 at 20.26.56.jpeg" class="photo" style="--photo-index: 2" alt="valentine">
+            </div>
+            <div class="buttons">
+                <button id="yesBtn" class="btn yes-btn">Yes! 💖</button>
+                <button id="noBtn" class="btn no-btn">No 💔</button>
+            </div>
+            <div id="response" class="response"></div>
+        </div>
+    </div>
+    <div class="celebration"></div>
+    <script src="valentines.js"></script>
+</body>
+</html>
